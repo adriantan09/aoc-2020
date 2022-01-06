@@ -1,4 +1,5 @@
 # Time complexity: O(n^3)
+# where n is the number of lines in the input file
 def find_2020_3sum(numbers):
     for n1 in numbers:
         for n2 in numbers:
