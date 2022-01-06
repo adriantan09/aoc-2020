@@ -2,7 +2,9 @@ import re
 from part1 import validator1
 from part2 import validator2
 
-data = open('./input.txt', 'r').read().split('\n')
+with open('./input.txt', 'r') as fd:
+    content = fd.read()
+    lines = content.split('\n')
 
 # Time complexity: O(n)
 # where n is the number of lines in the input file
@@ -14,5 +16,5 @@ def validate_passwords(data, is_valid_password):
             n_valid_passwords += 1
     return n_valid_passwords
 
-print('part 1:', validate_passwords(data, validator1))
-print('part 2:', validate_passwords(data, validator2))
+print('part 1:', validate_passwords(lines, validator1))
+print('part 2:', validate_passwords(lines, validator2))
