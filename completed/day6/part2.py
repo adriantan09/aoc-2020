@@ -1,4 +1,3 @@
-
 def count_everyone_yes(groups):
     total = 0
     for group in groups:
