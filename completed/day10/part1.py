@@ -1,5 +1,4 @@
 def find_jolt_diff(numbers):
-    numbers.sort()
     jolt_diff = {1: 0, 2: 0, 3: 1}
     jolt_diff[numbers[0]] += 1 # starting jolt
 
